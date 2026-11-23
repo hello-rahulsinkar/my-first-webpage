@@ -73,10 +73,25 @@ function showWelcomeMessage() {
 }
 welcomeButton.addEventListener("click", showWelcomeMessage);
 
+// const skills = ["HTML", "CSS", "JavaScript"];
+// console.log(skills);
+// console.log(skills[0]);
+// console.log(skills[2]);
+// console.log(skills.length);
+// skills.push("React");
+// console.log(skills);
+// for (let i = 0; i < skills.length; i++) {
+//     console.log(skills[i]);
+// }
 
+const skills = ["HTML", "CSS", "JavaScript", "React", "Node.js"];
 
-
-
+const skillsList = document.getElementById("skillsList");
+for (let i = 0; i < skills.length; i++) {
+    const listItem = document.createElement("li");
+    listItem.textContent = skills[i];
+    skillsList.appendChild(listItem);
+}
 
 
 
