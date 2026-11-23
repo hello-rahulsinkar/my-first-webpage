@@ -85,7 +85,6 @@ welcomeButton.addEventListener("click", showWelcomeMessage);
 // }
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Node.js"];
-
 const skillsList = document.getElementById("skillsList");
 for (let i = 0; i < skills.length; i++) {
     const listItem = document.createElement("li");
@@ -93,9 +92,21 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(listItem);
 }
 
-
-
-
+const user = {
+    name: "Rahul",
+    age: 25,
+    profession: "Full Stack Developer"
+};
+// console.log(user);
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.profession);
+user.age = 26;
+// console.log(user.age);
+// console.log(user);
+user.city = "Nashik";
+console.log(user.city);
+console.log(user);
 
 
 
