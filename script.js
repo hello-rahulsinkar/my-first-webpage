@@ -108,5 +108,45 @@ user.city = "Nashik";
 console.log(user.city);
 console.log(user);
 
+const technologies = ["HTML", "CSS", "JavaScript", "React"];
+technologies.pop();
+console.log(technologies);
+technologies.push("Node.js");
+console.log(technologies);
+technologies.shift();
+console.log(technologies);
+technologies.unshift("HTML");
+console.log(technologies);
+// console.log(technologies.includes("React"));
+// console.log(technologies.includes("CSS"));
+// console.log(technologies.indexOf("JavaScript"));
+// console.log(technologies.indexOf("React"));
+// console.log(technologies.join(", "));
+// technologies.forEach(function(technology) {
+//     console.log(technology);
+// });
+// const upperCaseTechnologies = technologies.map(function(technology) {
+//     return technology.toUpperCase();
+// });
+// console.log(upperCaseTechnologies);
+// console.log("Current array:", technologies);
+const longNames = technologies.filter(function(technology) {
+    return technology.length > 4;
+});
+console.log(longNames);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
