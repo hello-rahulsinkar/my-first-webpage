@@ -130,45 +130,78 @@ console.log(technologies);
 // });
 // console.log(upperCaseTechnologies);
 // console.log("Current array:", technologies);
-const longNames = technologies.filter(function(technology) {
-    return technology.length > 4;
-});
-console.log(longNames);
 
-for (let i = 1; i <= 5; i++) {
-    console.log(i);
-}
+// const longNames = technologies.filter(function(technology) {
+//     return technology.length > 4;
+// });
+// console.log(longNames);
 
-let total = 0;
-for (let i = 1; i <= 5; i++) {
-    total = total + i;
-}
-console.log("Total:", total);
+// for (let i = 1; i <= 5; i++) {
+//     console.log(i);
+// }
 
-let count = 1;
-while (count <= 5) {
-    console.log("Count:", count);
-    count++;
-}
+// let total = 0;
+// for (let i = 1; i <= 5; i++) {
+//     total = total + i;
+// }
+// console.log("Total:", total);
 
-const fruits = ["Apple", "Banana", "Mango"];
-for (const fruit of fruits) {
-    console.log(fruit);
-}
+// let count = 1;
+// while (count <= 5) {
+//     console.log("Count:", count);
+//     count++;
+// }
 
-for (let i = 1; i <= 10; i++) {
-    if (i === 6) {
-        break;
-    }
-    console.log(i);
-}
+// const fruits = ["Apple", "Banana", "Mango"];
+// for (const fruit of fruits) {
+//     console.log(fruit);
+// }
 
-for (let i = 1; i <= 5; i++) {
-    if (i === 3) {
-        continue;
-    }
-    console.log(i);
-}
+// for (let i = 1; i <= 10; i++) {
+//     if (i === 6) {
+//         break;
+//     }
+//     console.log(i);
+// }
+
+// for (let i = 1; i <= 5; i++) {
+//     if (i === 3) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+const aboutHeading = document.getElementById("aboutHeading");
+aboutHeading.textContent = "About Me – Welcome!";
+
+aboutHeading.style.color = "blue";
+// aboutHeading.style.display = "none";
+aboutHeading.style.display = "block";
+
+const newParagraph = document.createElement("p");
+newParagraph.textContent = "This paragraph was created using JavaScript!";
+aboutHeading.after(newParagraph);
+
+const aboutSection = document.getElementById("aboutSection");
+const sectionParagraph = document.createElement("p");
+sectionParagraph.textContent = "JavaScript can add content inside existing sections!";
+aboutSection.appendChild(sectionParagraph);
+
+newParagraph.remove();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
