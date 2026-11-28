@@ -135,14 +135,40 @@ const longNames = technologies.filter(function(technology) {
 });
 console.log(longNames);
 
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
 
+let total = 0;
+for (let i = 1; i <= 5; i++) {
+    total = total + i;
+}
+console.log("Total:", total);
 
+let count = 1;
+while (count <= 5) {
+    console.log("Count:", count);
+    count++;
+}
 
+const fruits = ["Apple", "Banana", "Mango"];
+for (const fruit of fruits) {
+    console.log(fruit);
+}
 
+for (let i = 1; i <= 10; i++) {
+    if (i === 6) {
+        break;
+    }
+    console.log(i);
+}
 
-
-
-
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        continue;
+    }
+    console.log(i);
+}
 
 
 
